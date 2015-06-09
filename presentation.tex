@@ -12,13 +12,13 @@
 
 \input{res/beamer-template}
 
-\titleimage{titleDrawing123.pdf}
+%\titleimage{ }
 
-\title{Implementing and Analysing sFlow measurements at an Internet Exchange Point}
-\subtitle{Bachelor Thesis Presentation}
-\author{Fabrice Jean Ryba}
+\title{Erweiterungen für VAST}
+\subtitle{Importer, Middleware und Web-Applikation}
+\author{Samir Al-Sheikh, Andreas Reuter, Fabrice Ryba, Robert Schmidt}
 \institute[FU Berlin]{Freie Universität Berlin}
-\date[]{Computer Systems and Telematics, July 2014}
+\date[]{Softwareprojekt Technische Informatik, SS 2015}
 
 \renewcommand{\footlinetext}{\insertshorttitle, \insertshortauthor} % \insertshortinstitute, 
 
@@ -28,46 +28,38 @@
         \titlepage
     \end{frame}
 
-\section{Introduction}
+\section{Motivation}
 
-\subsection{Motivation}
-    \begin{frame}{Motivation}
-	\begin{itemize}
-		\item Prevention of Denial of Service attacks
-		\item Known from public media
-		\item Own experience as a user of a service
-		\item Countermeasures exist but are expensive to implement everywhere needed
-		\item Select central nodes to reduce costs (IXP)
-	\end{itemize}
-    \end{frame}
+\section{Motivation}
 
-\subsection{Implementing}
+\subsection{BGP und BGP-Hijacking}
 
-	\begin{frame}{SFlow Measurements at an IXP}
-		\begin{itemize}
-			\item Agent
-			\begin{itemize}
-				\item generating traffic samples
-				\item relatively low sampling rate
-				\item at single switch $\rightarrow$ one quarter of the IXP's total traffic
-			\end{itemize}
-			\item Collector
-			\begin{itemize}
-				\item receiving and processing of sFlow samples
-				\item TCPDUMP as collector
-				\item I/O optimising with RAID configuration
-			\end{itemize}
-		\end{itemize}
-	\end{frame}
+\begin{frame}{BGP Funktionsweise}{}
+	\begin{center}
+		\includegraphics[width=1.0\textwidth]{res/bgp_propagation.pdf}
+	\end{center}
+\end{frame}
 
-\section{Analysis}
+\begin{frame}{BGP Hijacking}{}
+	\begin{center}
+		\includegraphics[width=0.85\textwidth]{res/prefix_hijack.pdf}
+	\end{center}
+\end{frame}
 
+\subsection{VAST}
 
-    \begin{frame}
-        \begin{center}
-            \Large Thank you for your attention!
-        \end{center}
-    \end{frame}
+\section{Ziele}
+
+\section{Software-Komponenten}
+
+\subsection{Importer}
+
+\subsection{Middleware}
+
+\subsection{Web-Anwendung}
+
+\section{Demo}
+
 
 \end{document}
 
