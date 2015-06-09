@@ -1,0 +1,74 @@
+\documentclass[9pt]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{tikz}
+\usepackage{rotating}
+
+\usetikzlibrary{arrows,calc,shapes,positioning}
+
+\input{res/beamer-template}
+
+\titleimage{titleDrawing123.pdf}
+
+\title{Implementing and Analysing sFlow measurements at an Internet Exchange Point}
+\subtitle{Bachelor Thesis Presentation}
+\author{Fabrice Jean Ryba}
+\institute[FU Berlin]{Freie Universität Berlin}
+\date[]{Computer Systems and Telematics, July 2014}
+
+\renewcommand{\footlinetext}{\insertshorttitle, \insertshortauthor} % \insertshortinstitute, 
+
+\begin{document}
+
+    \begin{frame}
+        \titlepage
+    \end{frame}
+
+\section{Introduction}
+
+\subsection{Motivation}
+    \begin{frame}{Motivation}
+	\begin{itemize}
+		\item Prevention of Denial of Service attacks
+		\item Known from public media
+		\item Own experience as a user of a service
+		\item Countermeasures exist but are expensive to implement everywhere needed
+		\item Select central nodes to reduce costs (IXP)
+	\end{itemize}
+    \end{frame}
+
+\subsection{Implementing}
+
+	\begin{frame}{SFlow Measurements at an IXP}
+		\begin{itemize}
+			\item Agent
+			\begin{itemize}
+				\item generating traffic samples
+				\item relatively low sampling rate
+				\item at single switch $\rightarrow$ one quarter of the IXP's total traffic
+			\end{itemize}
+			\item Collector
+			\begin{itemize}
+				\item receiving and processing of sFlow samples
+				\item TCPDUMP as collector
+				\item I/O optimising with RAID configuration
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+\section{Analysis}
+
+
+    \begin{frame}
+        \begin{center}
+            \Large Thank you for your attention!
+        \end{center}
+    \end{frame}
+
+\end{document}
+
+% vim: ft=tex tw=0
