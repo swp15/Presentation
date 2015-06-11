@@ -118,6 +118,11 @@
 \subsection{Middleware}
 
 \begin{frame}{Middleware - Implementierung}{}
+	\begin{itemize}
+		\item HTTP über CAF-Nachrichten (Broker)
+		\item Webserver als eigener Actor
+		\item erzeugt bei jeder Verbindung neuen Actor zur Verarbeitung und Weiterleitung der Query
+	\end{itemize}
 	\begin{center}
 		%\includegraphics[width=1.0\textwidth]{res/???.pdf}
 	\end{center}
@@ -127,17 +132,19 @@
 
 	heutiger Stand:
 	\begin{itemize}
-		\item ...
+		\item Query empfangen und antworten
 	\end{itemize}
 
 	Probleme:
 	\begin{itemize}
-		\item ...
+		\item Projekt ist in aktiver Entwicklung, häufige Änderungen
+		\item einige Fehler
 	\end{itemize}
 	
 	nächster Milestone:
 	\begin{itemize}
-		\item ...
+		\item Schnittstelle erweitern
+		\item HTTP-Parser
 	\end{itemize}
 
 \end{frame}
