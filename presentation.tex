@@ -22,13 +22,24 @@
 
 \renewcommand{\footlinetext}{\insertshorttitle, \insertshortauthor} % \insertshortinstitute, 
 
+\AtBeginSection[]
+{
+  \begin{frame}<beamer>{Gliederung}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
 \begin{document}
 
-    \begin{frame}
-        \titlepage
-    \end{frame}
+\begin{frame}
+    \titlepage
+\end{frame}
 
-\section{Motivation}
+\begin{frame}{Gliederung}
+  \tableofcontents
+\end{frame}
+
 
 \section{Motivation}
 
@@ -48,17 +59,53 @@
 
 \subsection{VAST}
 
+\begin{frame}{VAST = Visibility Across Space and Time}{}
+	\begin{itemize}
+		\item bietet eine sehr schnelle Verarbeitung von Massendaten
+		\item ...
+	\end{itemize}
+\end{frame}
+
+
 \section{Ziele}
+
+\begin{frame}{Ziele}{}
+	\begin{itemize}
+		\item ...
+	\end{itemize}
+\end{frame}
 
 \section{Software-Komponenten}
 
+\begin{frame}{Software-Komponenten}{}
+	\begin{center}
+		%\includegraphics[width=1.0\textwidth]{res/vast_architecture.pdf}
+	\end{center}
+\end{frame}
+
 \subsection{Importer}
+
+\begin{frame}{Importer}{}
+	...
+\end{frame}
 
 \subsection{Middleware}
 
+\begin{frame}{Middleware}{}
+	...
+\end{frame}
+
 \subsection{Web-Anwendung}
 
+\begin{frame}{Web-Anwendung}{}
+	...
+\end{frame}
+
 \section{Demo}
+
+\begin{frame}{Demo}{}
+	...
+\end{frame}
 
 
 \end{document}
