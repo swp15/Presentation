@@ -41,7 +41,7 @@
 \end{frame}
 
 
-\section{Motivation}
+\section{Hintergrund}
 
 \subsection{BGP und BGP-Hijacking}
 
@@ -60,14 +60,32 @@
 \subsection{VAST}
 
 \begin{frame}{VAST = Visibility Across Space and Time}{}
+	Anwendungsfall: Netzwerk-Forensik
+	\begin{itemize}
+		\item sehr viele Log-Dateien von verschiedenen Systemen
+		\item Bei Problem: Durchsuchen und Analyse großer Datenmengen
+		\item mit herkömmlichen Mitteln sehr aufwendig
+	\end{itemize}
+	VAST:
 	\begin{itemize}
 		\item bietet eine sehr schnelle Durchsuchung von Massendaten
-		\item ...
+		\item besondere Vorteil bei forensischer Suche
 	\end{itemize}
 \end{frame}
 
+\begin{frame}{VAST - Architektur}{}
+	\begin{itemize}
+		\item setzt auf das Actor-Modell
+		\begin{itemize}
+			\item nebenläufige Einheiten (Actor)
+			\item Kommunikation ausschließlich über Nachrichten
+		\end{itemize}
+	\end{itemize}
+	% TODO: Bild
+\end{frame}
 
-\section{Ziele}
+
+\section{Motivation und Ziele}
 
 \begin{frame}{Motivation und Ziele}{}
 	\begin{itemize}
