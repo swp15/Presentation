@@ -62,14 +62,14 @@
 \begin{frame}{VAST = Visibility Across Space and Time}{}
 	Anwendungsfall: Netzwerk-Forensik
 	\begin{itemize}
-		\item sehr viele Log-Dateien von verschiedenen Systemen
-		\item Bei Problem: Durchsuchen und Analyse großer Datenmengen
-		\item mit herkömmlichen Mitteln sehr aufwendig
+		\item Sehr viele Log-Dateien von verschiedenen Systemen/Protokollen
+		\item Bei Problem: Durchsuchen und Analysieren großer Datenmengen
+		\item Mit herkömmlichen Mitteln sehr Zeitaufwendig
 	\end{itemize}
 	VAST:
 	\begin{itemize}
-		\item bietet eine sehr schnelle Durchsuchung von Massendaten
-		\item besondere Vorteil bei forensischer Suche
+		\item Bietet eine sehr schnelle Durchsuchung von Massendaten
+		\item Explorative Suchen können schnell ausgeführt werden (wichtig bei forensischen Analysen)
 	\end{itemize}
 \end{frame}
 
@@ -77,7 +77,7 @@
 	\begin{itemize}
 		\item Setzt auf das Actor-Modell
 		\begin{itemize}
-			\item nebenläufige Einheiten (Actor)
+			\item Nebenläufige Einheiten (Actor)
 			\item Kommunikation ausschließlich über Nachrichten
 		\end{itemize}
 	\end{itemize}
@@ -91,7 +91,7 @@
 
 \begin{frame}{Motivation und Ziele}{}
 	\begin{itemize}
-		\item bisheriger BGP-Importer liest nur Text-Format ein --> langsam bei vielen Dateien
+		\item Bisheriger BGP-Importer liest nur Text-Format ein --> langsam bei vielen Dateien
 		\item Erweiterung des BGP-Importers, um gängige Binär-Formate nativ einzulesen
 		\item User-Interface bisher nur über Konsole
 		\item Erweiterung um Graphische Web-Oberfläche zur Datenvisualisierung
@@ -123,7 +123,7 @@
 	\begin{itemize}
 		\item HTTP über CAF-Nachrichten (Broker)
 		\item Webserver als eigener Actor
-		\item erzeugt bei jeder Verbindung neuen Actor zur Verarbeitung und Weiterleitung der Query
+		\item Erzeugt bei jeder Verbindung neuen Actor zur Verarbeitung und Weiterleitung der Query
 	\end{itemize}
 	\begin{center}
 		%\includegraphics[width=1.0\textwidth]{res/???.pdf}
@@ -132,7 +132,7 @@
 
 \begin{frame}{Middleware - Stand und Probleme}{}
 
-	heutiger Stand:
+	Heutiger Stand:
 	\begin{itemize}
 		\item Query empfangen und antworten
 	\end{itemize}
@@ -140,10 +140,10 @@
 	Probleme:
 	\begin{itemize}
 		\item Projekt ist in aktiver Entwicklung, häufige Änderungen
-		\item einige Fehler
+		\item Einige Fehler
 	\end{itemize}
 	
-	nächster Milestone:
+	Nächster Milestone:
 	\begin{itemize}
 		\item Schnittstelle erweitern
 		\item HTTP-Parser
@@ -153,8 +153,33 @@
 
 \subsection{Web-Anwendung}
 
-\begin{frame}{Web-Anwendung}{}
-	...
+\begin{frame}{Motivation und Technologien}{}
+	Motivation:
+	\begin{itemize}
+		\item Einfaches exploratives Durchsuchen von großen Datenmengen\\
+			$\rightarrow$ Daten visualisieren und einfaches Filtern ermöglichen
+	\end{itemize}
+	Technologien:
+	\begin{itemize}
+		\item Python 3 + Django
+		\item Kommunikation zu VAST: HTTP + JSON
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Stand und Probleme}
+	Heutiger Stand:
+	\begin{itemize}
+		\item Nimmt VAST-Anfragen entgegen 
+		\item Schickt Anfrage an VAST-API
+		\item Empfängt JSON Antwort 
+		\item Erstellt eine filterbare Tabelle
+	\end{itemize}
+	Nächster Milestone:
+	\begin{itemize}
+		\item Visualisieren der Routenänderungen in einem Graphen
+		\item VAST-Anfragenerstellung durch graphische Elemente erleichtern
+		\item Weitere Anwendungsfälle implementieren
+	\end{itemize}
 \end{frame}
 
 \section{Demo}
