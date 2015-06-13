@@ -113,14 +113,39 @@
 
 \subsection{Importer}
 
-	\begin{frame}{}
-		\begin{center}
-			\LARGE \textbf{Importer}
-		\end{center}
-	\end{frame}
+\begin{frame}{}
+	\begin{center}
+		\LARGE \textbf{Importer}
+	\end{center}
+\end{frame}
 
 \begin{frame}{Importer}{}
-	...
+	\begin{itemize}
+		\item Low-Order Parser interpretieren eingelesene Bytes
+		\item High-Order Parser fassen anschließend Bytes zu Paketfeldern zusammen
+		\item Gesamtes BGP-Paket als Event übergeben
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Importer - Stand und Probleme}{}
+
+	Heutiger Stand:
+	\begin{itemize}
+		\item BGP-Dumps können eingelesen werden
+	\end{itemize}
+
+	Probleme:
+	\begin{itemize}
+		\item  häufige Änderungen durch aktive Entwicklung
+		\item ungenaue Definition der Paketfelder
+	\end{itemize}
+	
+	Nächster Milestone:
+	\begin{itemize}
+		\item Parallelität
+		\item Performance-Test
+	\end{itemize}
+
 \end{frame}
 
 \subsection{Middleware}
