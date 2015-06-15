@@ -215,13 +215,24 @@
 	\end{frame}
 
 \begin{frame}{Middleware - Implementierung}{}
+	Anforderungen:
 	\begin{itemize}
-		\item HTTP über CAF-Nachrichten (Broker)
-		\item Webserver als eigener Actor
-		\item Erzeugt bei jeder Verbindung neuen Actor zur Verarbeitung und Weiterleitung der Query
+		\item HTTP-Parser und Server selbst implementieren
+		\item Integration ins Actor-Modell für Parallelität
+		\item vorhandenes parseable Konzept verwenden
+		\item externe Bibliotheken vermeiden
 	\end{itemize}
+	Umsetzung: HTTP über CAF-Nachrichten
+	\begin{itemize}
+		\item Broker für die Konvertierung von HTTP-Nachrichten in CAF-Nachrichten
+		\item Webserver als eigener Actor, bekommt HTTP-Anfragen als CAF-Nachrichten
+		\item Erzeugt bei jeder Verbindung neuen Actor zur Verarbeitung und Weiterleitung der Anfrage
+		\item Dadurch Bearbeitung mehrerer Anfragen gleichzeitig
+	\end{itemize}
+\end{frame}
+\begin{frame}{Middleware - Implementierung}{}
 	\begin{center}
-		%\includegraphics[width=1.0\textwidth]{res/???.pdf}
+		\includegraphics[width=0.5\textwidth]{res/swp_vast_detail.pdf}
 	\end{center}
 \end{frame}
 
@@ -229,16 +240,17 @@
 
 	Heutiger Stand:
 	\begin{itemize}
-		\item Query empfangen und antworten
+		\item Anfragen empfangen und antworten
 	\end{itemize}
 
 	Probleme:
 	\begin{itemize}
-		\item Projekt ist in aktiver Entwicklung, häufige Änderungen
+		\item VAST ist in aktiver Entwicklung, häufige Änderungen
+		\item wenige Dokumentation
 		\item Einige Fehler
 	\end{itemize}
 	
-	Nächster Milestone:
+	Nächster Schritt:
 	\begin{itemize}
 		\item Schnittstelle erweitern
 		\item HTTP-Parser
@@ -275,7 +287,7 @@
 		\item Empfängt JSON Antwort 
 		\item Erstellt eine filterbare Tabelle
 	\end{itemize}
-	Nächster Milestone:
+	Nächster Schritt:
 	\begin{itemize}
 		\item Visualisieren der Routenänderungen in einem Graphen
 		\item VAST-Anfragenerstellung durch graphische Elemente erleichtern
