@@ -7,6 +7,7 @@
 \usepackage{listings}
 \usepackage{tikz}
 \usepackage{rotating}
+\usepackage{booktabs}
 
 \usetikzlibrary{arrows,calc,shapes,positioning}
 
@@ -109,9 +110,9 @@
 \begin{frame}{VAST - Architektur}{}
 	VAST:
 	\begin{itemize}
-		\item unterstützt Parallelität
-		\item verteilt auf mehrere Cluster
-		\item setzt auf das Actor-Modell auf
+		\item Unterstützt Parallelität
+		\item Verteilt auf mehrere Cluster
+		\item Setzt auf das Actor-Modell auf
 	\end{itemize}	
 	Actor-Modell:
 	\begin{itemize}
@@ -134,7 +135,7 @@
    Status Quo:
 	\begin{itemize}
 		\item BGP-Importer liest nur Text-Format ein
-		\item nur über Konsole zugänglich
+		\item Nur über Konsole zugänglich
 		\end{itemize}
 		\vspace{0,2cm}		
 	Probleme:
@@ -195,8 +196,8 @@
 	\vspace{0,2cm}
 	Probleme:
 	\begin{itemize}
-		\item  häufige Änderungen durch aktive Entwicklung
-		\item ungenaue Definition der Paketfelder
+		\item  Häufige Änderungen durch aktive Entwicklung
+		\item Ungenaue Definition der Paketfelder
 	\end{itemize}
 	\vspace{0,2cm}
 	Nächster Schritt:
@@ -262,8 +263,9 @@
 	\end{itemize}
 	Technologien:
 	\begin{itemize}
-		\item Python 3 + Django
-		\item Kommunikation zu VAST: HTTP + JSON
+		\item Schnelle, stabile, sichere Webanwendung entwicklung in einer bekannten Programmiersprache:  Python 3 + Django
+			
+		\item Kommunikation zu VAST durch einfaches  und weitverbreitetes Protokoll und Format: HTTP + JSON
 	\end{itemize}
 \end{frame}
 
@@ -274,6 +276,7 @@
 		\item Schickt Anfrage an VAST-API
 		\item Empfängt JSON Antwort 
 		\item Erstellt eine filterbare Tabelle
+		\item Erstellt einen Graph des BGP routing
 	\end{itemize}
 	Nächster Milestone:
 	\begin{itemize}
@@ -281,6 +284,33 @@
 		\item VAST-Anfragenerstellung durch graphische Elemente erleichtern
 		\item Weitere Anwendungsfälle implementieren
 	\end{itemize}
+\end{frame}
+
+\subsection{Zusammenfassung und Ausblick}
+
+\begin{frame}{Zusammenfassung}
+
+	\begin{table}[h!]
+	\centering
+	\begin{tabular}{p{5em} p{12em} p{12em}}
+		\textbf{Komponente} & \textbf{Meilenstein (Heute)} & \textbf{aktueller Stand} \\ \midrule
+		Importer & Implementierung beendet, Leistung verbessern/testen & BGP-Dumps werden binär und sequentiell geladen, Parallelisierung noch offen \\ \midrule
+		Middleware & Interface definieren, Grundfunktion implementiert & Empfängt VAST-Anfragen und antwortet mit dem Resultat auf einer festgelegten API \\ \midrule
+		Web-Anwendung & Für einen Anwendungsfall Daten anfragen und anzeigen & VAST-Anfrage wird gesendet und die Antwort empfangen, Daten können als filterbare Tabelle und Graph dargestellt werden \\ \bottomrule
+	\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}
+	\begin{table}[h!]
+	\centering
+	\begin{tabular}{p{5em} p{12em} p{12em}}
+		\textbf{Komponente} & \textbf{Meilenstein (30.6.)} & \textbf{Meilenstein (7.6.)} \\ \midrule
+		Importer & Prallelisierung implementieren, Abgeschlossen und getestet & Integrations- und Leistungsfähigkeitstest \\ \midrule
+		Middleware & Vollständiges Interface implementiert, HTTP-Parser	& Integrations- und Leistungsfähigkeitstest \\ \midrule
+		Web-Anwendung & Visualisieren der Routenänderungen, VAST-Anfrage durch graphische Elemente erleichtern & Anwendungsfall fertig implementiert \\ \bottomrule
+	\end{tabular}
+	\end{table}
 \end{frame}
 
 \section{Demo}
