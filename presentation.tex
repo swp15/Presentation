@@ -15,9 +15,9 @@
 
 %\titleimage{ }
 
-\title{Interaktive Analyse von Routing-Daten zum Schutz des Internet-Backbones}
+\title[Softwareprojekt SS2015]{Interaktive Analyse von Routing-Daten zum Schutz des Internet-Backbones}
 \subtitle{BGP-Importer, HTTP-Middleware und Web-Applikation für VAST}
-\author{Samir Al-Sheikh, Andreas Reuter, Fabrice Ryba, Robert Schmidt}
+\author[Samir, Andreas, Fabrice, Robert]{Samir Al-Sheikh, Andreas Reuter, Fabrice Ryba, Robert Schmidt}
 \institute[FU Berlin]{Freie Universität Berlin}
 \date[]{Softwareprojekt Technische Informatik, SS 2015}
 
@@ -124,7 +124,7 @@
 \end{frame}
 \begin{frame}{VAST - Architektur}{}
 	\begin{center}
-		\includegraphics[trim=0cm 16cm 3cm 4cm,clip,width=0.85\textwidth]{res/vast.pdf}
+		\includegraphics[width=1.0\textwidth]{res/vast.pdf}
 	\end{center}
 \end{frame}
 
@@ -216,13 +216,24 @@
 	\end{frame}
 
 \begin{frame}{Middleware - Implementierung}{}
+	Anforderungen:
 	\begin{itemize}
-		\item HTTP über CAF-Nachrichten (Broker)
-		\item Webserver als eigener Actor
-		\item Erzeugt bei jeder Verbindung neuen Actor zur Verarbeitung und Weiterleitung der Query
+		\item HTTP-Parser und Server selbst implementieren
+		\item Integration ins Actor-Modell für Parallelität
+		\item vorhandenes parseable Konzept verwenden
+		\item externe Bibliotheken vermeiden
 	\end{itemize}
+	Umsetzung: HTTP über CAF-Nachrichten
+	\begin{itemize}
+		\item Broker für die Konvertierung von HTTP-Nachrichten in CAF-Nachrichten
+		\item Webserver als eigener Actor, bekommt HTTP-Anfragen als CAF-Nachrichten
+		\item Erzeugt bei jeder Verbindung neuen Actor zur Verarbeitung und Weiterleitung der Anfrage
+		\item Dadurch Bearbeitung mehrerer Anfragen gleichzeitig
+	\end{itemize}
+\end{frame}
+\begin{frame}{Middleware - Implementierung}{}
 	\begin{center}
-		%\includegraphics[width=1.0\textwidth]{res/???.pdf}
+		\includegraphics[width=0.5\textwidth]{res/swp_vast_detail.pdf}
 	\end{center}
 \end{frame}
 
@@ -230,16 +241,17 @@
 
 	Heutiger Stand:
 	\begin{itemize}
-		\item Query empfangen und antworten
+		\item Anfragen empfangen und antworten
 	\end{itemize}
 
 	Probleme:
 	\begin{itemize}
-		\item Projekt ist in aktiver Entwicklung, häufige Änderungen
+		\item VAST ist in aktiver Entwicklung, häufige Änderungen
+		\item wenige Dokumentation
 		\item Einige Fehler
 	\end{itemize}
 	
-	Nächster Milestone:
+	Nächster Schritt:
 	\begin{itemize}
 		\item Schnittstelle erweitern
 		\item HTTP-Parser
@@ -278,7 +290,7 @@
 		\item Erstellt eine filterbare Tabelle
 		\item Erstellt einen Graph des BGP routing
 	\end{itemize}
-	Nächster Milestone:
+	Nächster Schritt:
 	\begin{itemize}
 		\item Visualisieren der Routenänderungen in einem Graphen
 		\item VAST-Anfragenerstellung durch graphische Elemente erleichtern
