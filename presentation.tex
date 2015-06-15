@@ -70,7 +70,7 @@
 \end{frame}
 \begin{frame}{BGP Daten}{}
 	\begin{center}
-		\includegraphics[width=0.85\textwidth]{res/route_collector.pdf}
+		%\includegraphics[width=0.85\textwidth]{res/route_collector.pdf}
 	\end{center}
 \end{frame}
 \begin{frame}[fragile]\frametitle{BGP Daten}
@@ -131,17 +131,29 @@
 \section{Motivation und Ziele}
 
 \begin{frame}{Motivation und Ziele}{}
+   Status Quo:
 	\begin{itemize}
-		\item Bisheriger BGP-Importer liest nur Text-Format ein --> langsam bei vielen Dateien
-		\item Erweiterung des BGP-Importers, um gängige Binär-Formate nativ einzulesen
-		\item User-Interface bisher nur über Konsole
-		\item Erweiterung um Graphische Web-Oberfläche zur Datenvisualisierung
-		\item Dazu:
+		\item BGP-Importer liest nur Text-Format ein
+		\item nur über Konsole zugänglich
+		\end{itemize}
+		\vspace{0,2cm}		
+	Probleme:
+		\begin{itemize}
+		\item Dateien müssen erst konvertiert werden (ineffizient)
+		\item Keine Datenvisualisierung
+		\end{itemize}
+		\vspace{0,2cm}
+	Lösungsansätze:
+		\begin{itemize}
+			\item Erweiterung des BGP-Importers, um gängige Binär-Formate nativ 
+			         einzulesen
+			\item Erweiterung um graphische Web-Oberfläche
+			\vspace{0,1cm}
 		\begin{itemize}
 			\item Entwicklung einer REST-Schnittstelle (Middleware)
 			\item Entwicklung einer Web-Anwendung für die Analyse von BGP-Daten
 		\end{itemize}
-	\end{itemize}
+		\end{itemize}
 \end{frame}
 
 \section{Software-Komponenten}
@@ -161,6 +173,12 @@
 \end{frame}
 
 \begin{frame}{Importer}{}
+   Ziel:
+   	\begin{itemize}
+   	\item Einlesen von BGP-Dumps
+   	\end{itemize}
+   	\vspace{0,2cm}
+   Funktionsdetails:
 	\begin{itemize}
 		\item Low-Order Parser interpretieren eingelesene Bytes
 		\item High-Order Parser fassen anschließend Bytes zu Paketfeldern zusammen
@@ -174,17 +192,16 @@
 	\begin{itemize}
 		\item BGP-Dumps können eingelesen werden
 	\end{itemize}
-
+	\vspace{0,2cm}
 	Probleme:
 	\begin{itemize}
 		\item  häufige Änderungen durch aktive Entwicklung
 		\item ungenaue Definition der Paketfelder
 	\end{itemize}
-	
-	Nächster Milestone:
+	\vspace{0,2cm}
+	Nächster Schritt:
 	\begin{itemize}
-		\item Parallelität
-		\item Performance-Test
+		\item Parallelität, um gleichzeitige Imports zu ermöglichen
 	\end{itemize}
 
 \end{frame}
