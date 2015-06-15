@@ -56,7 +56,41 @@
 		\includegraphics[width=0.85\textwidth]{res/prefix_hijack.pdf}
 	\end{center}
 \end{frame}
+\begin{frame}{Border Gateway Protocol}
+    \begin{itemize}
+        \pause
+        \item{BGP ist die Grundlage für Inter-Domain-Routing}
+        \pause
+        \item{Liefert notwendiges Fundament für das Zustellen von IP Paketen}
+        \pause
+        \item{Basiert auf Vertrauen, Kooperation der teilnehmenden AS ist notwendig}
+        \pause
+        \item{Angriffe oder Fehler aufzuspüren erfordert Analyse von grossen Datenmengen}
+    \end{itemize}
+\end{frame}
+\begin{frame}{BGP Daten}{}
+	\begin{center}
+		\includegraphics[width=0.85\textwidth]{res/route_collector.pdf}
+	\end{center}
+\end{frame}
+\begin{frame}[fragile]\frametitle{BGP Daten}
+    \begin{semiverbatim}
+        TIME: 06/15/15 13:40:00
+        TYPE: BGP4MP/MESSAGE/Update
+        FROM: 193.0.0.56 AS3333
+        TO: 193.0.4.28 AS12654
+        ASPATH: 3333 1103 2603 11404 22059
+        NEXT\textunderscore HOP: 193.0.0.56
+        ANNOUNCE
+          64.34.125.0/24
+            76.191.107.0/24
+        \end{semiverbatim}
+        \pause
+        \begin{itemize}
+            \item{Route Collector rrc00: In 24 Stunden ca. 25 Millionen Updates, ca. 6.6GB Daten}
 
+        \end{itemize}
+\end{frame}
 \subsection{VAST}
 
 \begin{frame}{VAST = Visibility Across Space and Time}{}
