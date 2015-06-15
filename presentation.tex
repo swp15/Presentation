@@ -14,8 +14,8 @@
 
 %\titleimage{ }
 
-\title{Erweiterungen für VAST}
-\subtitle{Importer, Middleware und Web-Applikation}
+\title{Interaktive Analyse von Routing-Daten zum Schutz des Internet-Backbones}
+\subtitle{BGP-Importer, HTTP-Middleware und Web-Applikation für VAST}
 \author{Samir Al-Sheikh, Andreas Reuter, Fabrice Ryba, Robert Schmidt}
 \institute[FU Berlin]{Freie Universität Berlin}
 \date[]{Softwareprojekt Technische Informatik, SS 2015}
@@ -63,19 +63,18 @@
 	Anwendungsfall: Netzwerk-Forensik
 	\begin{itemize}
 		\item Sehr viele Log-Dateien von verschiedenen Systemen/Protokollen
-		\item Bei Problem: Durchsuchen und Analysieren großer Datenmengen
-		\item Mit herkömmlichen Mitteln sehr Zeitaufwendig
+		\item Problem: Durchsuchen und Analysieren großer Datenmengen
+		\item Mit herkömmlichen Mitteln sehr zeitaufwendig
 	\end{itemize}
 	VAST:
 	\begin{itemize}
-		\item Bietet eine sehr schnelle Durchsuchung von Massendaten
 		\item Explorative Suchen können schnell ausgeführt werden (wichtig bei forensischen Analysen)
 	\end{itemize}
 \end{frame}
 
 \begin{frame}{VAST - Architektur}{}
 	\begin{itemize}
-		\item Setzt auf das Actor-Modell
+		\item Software-Backend setzt auf das Actor-Modell auf
 		\begin{itemize}
 			\item Nebenläufige Einheiten (Actor)
 			\item Kommunikation ausschließlich über Nachrichten
