@@ -14,10 +14,23 @@
    viewBox="0 0 210 297"
    id="svg4738"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="swp_vast_detail.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="swp_vast_detail.pdf">
   <defs
      id="defs3">
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Send"
+       style="overflow:visible;">
+      <path
+         id="path3952"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.2) rotate(180) translate(6,0)" />
+    </marker>
     <marker
        inkscape:isstock="true"
        style="overflow:visible;"
@@ -197,14 +210,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="312.60892"
-     inkscape:cy="709.29503"
+     inkscape:cx="186.18035"
+     inkscape:cy="737.86646"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="841"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
      inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-y="24"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true">
@@ -274,41 +287,39 @@
            id="tspan12229"
            sodipodi:role="line">Web Interface</tspan></text>
     </g>
+    <rect
+       style="fill:#66ff33;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27109182;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect5284-1-5-3"
+       width="33.4744"
+       height="16.541067"
+       x="50.391262"
+       y="49.243759" />
     <g
-       id="g4284">
-      <rect
-         y="49.243759"
-         x="50.391262"
-         height="16.541067"
-         width="33.4744"
-         id="rect5284-1-5-3"
-         style="fill:#5bf549;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.27109182;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <g
-         transform="translate(0.17934997,-0.41730721)"
-         id="g4278">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:3.52777791px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="55.949783"
+       style="fill:#000000;fill-opacity:1"
+       id="g4278"
+       transform="translate(0.17934997,-0.41730721)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4258"
+         y="56.20882"
+         x="55.949783"
+         style="font-size:3.52777791px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
+         xml:space="preserve"><tspan
            y="56.20882"
-           id="text4258"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan4260"
-             x="55.949783"
-             y="56.20882">HTTP Broker</tspan></text>
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="56.327881"
+           x="55.949783"
+           id="tspan4260"
+           sodipodi:role="line">HTTP Broker</tspan></text>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4274"
+         y="61.74762"
+         x="56.327881"
+         style="font-size:2.82222223px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
+         xml:space="preserve"><tspan
            y="61.74762"
-           id="text4274"
-           sodipodi:linespacing="125%"><tspan
-             sodipodi:role="line"
-             id="tspan4276"
-             x="56.327881"
-             y="61.74762">Listens on port</tspan></text>
-      </g>
+           x="56.327881"
+           id="tspan4276"
+           sodipodi:role="line">Listens on port</tspan></text>
     </g>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.28222222;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker4556)"
@@ -329,51 +340,49 @@
          style="font-size:2.82222223px">1. Sends <tspan
    style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic'"
    id="tspan4727">query</tspan></tspan></text>
+    <rect
+       style="fill:#66ff33;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.26938878999999999;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect5284-1-5-3-9"
+       width="28.234833"
+       height="19.364992"
+       x="115.30174"
+       y="49.242908" />
     <g
-       id="g4786"
-       transform="translate(11.692189,0.80635369)">
-      <rect
-         y="48.436554"
-         x="103.60955"
-         height="19.364992"
-         width="28.234833"
-         id="rect5284-1-5-3-9"
-         style="fill:#5bf549;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.26938879;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       style="fill:#000000;fill-opacity:1"
+       id="g4778"
+       transform="translate(12.908291,0.39611062)">
       <g
-         transform="translate(1.2161018,-0.41024307)"
-         id="g4778">
-        <g
-           id="g4278-5"
-           transform="translate(50.777873,-1.828425)">
-          <text
-             sodipodi:linespacing="125%"
-             id="text4258-6"
-             y="56.20882"
-             x="65.78553"
-             style="font-style:normal;font-weight:normal;font-size:3.52777791px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-             xml:space="preserve"><tspan
-               y="56.20882"
-               x="65.78553"
-               id="tspan4260-2"
-               sodipodi:role="line">Connection</tspan><tspan
-               y="60.618542"
-               x="65.78553"
-               sodipodi:role="line"
-               id="tspan4768"> Worker</tspan></text>
-        </g>
+         style="fill:#000000;fill-opacity:1"
+         transform="translate(50.777873,-1.828425)"
+         id="g4278-5">
         <text
            xml:space="preserve"
-           style="font-style:normal;font-weight:normal;font-size:2.82222223px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-           x="112.35401"
-           y="64.771431"
-           id="text4770"
+           style="font-size:3.52777791000000018px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
+           x="65.78553"
+           y="56.20882"
+           id="text4258-6"
            sodipodi:linespacing="125%"><tspan
              sodipodi:role="line"
-             x="112.35401"
-             y="64.771431"
-             id="tspan4774"
-             style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222223px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Italic'">query</tspan></text>
+             id="tspan4260-2"
+             x="65.78553"
+             y="56.20882">Connection</tspan><tspan
+             id="tspan4768"
+             sodipodi:role="line"
+             x="65.78553"
+             y="60.618542"> Worker</tspan></text>
       </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text4770"
+         y="64.771431"
+         x="112.35401"
+         style="font-size:2.82222222999999994px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
+         xml:space="preserve"><tspan
+           style="font-size:2.82222222999999994px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;font-family:sans-serif;-inkscape-font-specification:sans-serif Italic"
+           id="tspan4774"
+           y="64.771431"
+           x="112.35401"
+           sodipodi:role="line">query</tspan></text>
     </g>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.28222221px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
@@ -472,39 +481,34 @@
              y="100.0492">query</tspan></text>
       </g>
     </g>
-    <g
-       id="g10297"
-       transform="translate(3.6285714,0)">
-      <rect
-         y="132.50476"
-         x="88.837547"
-         height="27.819046"
-         width="73.780945"
-         id="rect10289"
-         style="fill:#e1ebff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.28222221;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text10291"
-         y="144.57288"
-         x="125.55576"
-         style="font-style:normal;font-weight:normal;font-size:7.05555582px;line-height:125%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         xml:space="preserve"><tspan
-           y="144.57288"
-           x="126.67886"
-           id="tspan10293"
-           sodipodi:role="line">VAST </tspan><tspan
-           id="tspan10295"
-           y="153.39232"
-           x="125.55576"
-           sodipodi:role="line">Data Structures</tspan></text>
-    </g>
+    <rect
+       style="fill:#ececec;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.28222220999999997;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect10289"
+       width="73.780945"
+       height="27.819046"
+       x="92.466118"
+       y="132.50476" />
+    <text
+       xml:space="preserve"
+       style="font-size:7.05555582000000037px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:sans-serif"
+       x="129.18434"
+       y="144.57288"
+       id="text10291"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan10293"
+         x="130.30743"
+         y="144.57288">VAST </tspan><tspan
+         sodipodi:role="line"
+         x="129.18434"
+         y="153.39232"
+         id="tspan10295">Data Structures</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.28222222;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker10311)"
        d="m 129.33682,132.50476 -0.0378,-26.58159"
        id="path10303"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
-       inkscape:connection-start="#g10297"
        inkscape:connection-end="#g10281" />
     <text
        xml:space="preserve"
@@ -553,5 +557,11 @@
          x="149.77937"
          y="42.496037"
          id="tspan10847" /></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:0,0;stroke-dashoffset:0;marker-mid:url(#Arrow1Send)"
+       d="M -176.42857,100.21933 -19.285714,314.50504"
+       id="path3931"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.28222223,0,0,0.28222223,-1.3919578e-6,0)" />
   </g>
 </svg>
