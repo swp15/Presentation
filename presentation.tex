@@ -220,16 +220,20 @@
 \begin{frame}{Middleware - Implementierung}{}
 	Anforderungen:
 	\begin{itemize}
+		\item Externe Bibliotheken vermeiden
 		\item HTTP-Parser und Server selbst implementieren
 		\item Integration ins Actor-Modell für Parallelität
 		\item Vorhandenes parseable Konzept verwenden
-		\item Externe Bibliotheken vermeiden
 	\end{itemize}
 	Umsetzung: HTTP über CAF-Nachrichten
 	\begin{itemize}
-		\item Broker für die Konvertierung von HTTP-Nachrichten in CAF-Nachrichten
-		\item Webserver als eigener Actor, bekommt HTTP-Anfragen als CAF-Nachrichten
-		\item Erzeugt bei jeder Verbindung neuen Actor zur Verarbeitung und Weiterleitung der Anfrage
+        \item Webserver als eigener Actor (Broker), bekommt HTTP-Anfragen als CAF-Nachrichten
+		\item Erzeugt bei jeder Verbindung neuen Actor welcher
+            \begin{itemize}
+                \item HTTP parst
+                \item Anfrage an VAST absetzt
+                \item Antwort als JSON an den Client weiterleitet
+            \end{itemize}
 		\item Dadurch Bearbeitung mehrerer Anfragen gleichzeitig
 	\end{itemize}
 \end{frame}
@@ -257,7 +261,7 @@
 	\begin{itemize}
 		\item HTTP-Parser
 		\item URL-Parser
-		\item dynamische HTTP-Antwort
+		\item Ergebnisse über HTTP streamen 
 	\end{itemize}
 
 \end{frame}
@@ -300,7 +304,7 @@
 	\end{itemize}
 \end{frame}
 
-\subsection{Zusammenfassung und Ausblick}
+\section{Zusammenfassung und Ausblick}
 
 \begin{frame}{Zusammenfassung}
 
