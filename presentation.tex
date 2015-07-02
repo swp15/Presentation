@@ -203,11 +203,11 @@
 	\vspace{0,3cm}
 	Probleme:
 	\begin{itemize}
-		\item anfangs keine direkte Implementierung der RFCs
-		\item verschachtelte Kombination vieler RFCs nötig
+		\item Anfangs keine direkte Implementierung der RFCs
+		\item Verschachtelte Kombination vieler RFCs nötig
 	\end{itemize}
 	\vspace{0,3cm}
-	offene Aufgaben:
+	Offene Aufgaben:
 	\begin{itemize}
 		\item Parallelität, um gleichzeitige Imports zu ermöglichen
 	\end{itemize}
@@ -287,8 +287,7 @@
 	\end{itemize}
 	Technologien:
 	\begin{itemize}
-		\item Schnelle, stabile, sichere Webanwendung entwicklung in einer bekannten Programmiersprache:  Python 3 + Django
-			
+		\item Schnelle, stabile, sichere Webanwendung entwicklung in einer bekannten Programmiersprache:  Python 3 (Django), Javascript			
 		\item Kommunikation zu VAST durch einfaches  und weitverbreitetes Protokoll und Format: HTTP + JSON
 	\end{itemize}
 \end{frame}
@@ -296,42 +295,52 @@
 \begin{frame}{Web-Anwendung - Stand und Probleme}
 	Heutiger Stand:
 	\begin{itemize}
-		\item Nimmt VAST-Anfragen entgegen 
-		\item Schickt Anfrage an VAST-API
-		\item Empfängt JSON Antwort 
-		\item Erstellt eine filterbare Tabelle
-		\item Erstellt einen Graph des BGP routing
+		\item Ermöglicht das Erstellen einer VAST-Anfrage ohne Vorwissen über dessen Syntax, durch GUI-Elemente 
+		\item Die erstellte VAST-Anfrage wird an den Server verschickt und  die JSON-Antwort wird dynamisch entgegengenommen 
+		\item Erstellt eine filterbare Tabelle oder einen Graph des BGP routing
 	\end{itemize}
-	Nächster Schritt:
+	Probleme:
 	\begin{itemize}
-		\item VAST-Anfragenerstellung durch graphische Elemente erleichtern
-		\item Dynamisches Laden der JSON-Daten
+		\item Das Erstellen von sicheren Formularen ist in Django leicht, aber nicht vollfunktionfähig wie mit Javascript \\
+		$\rightarrow$ Das Erstellen der Formulare erfolgte nach Abwägungen der Sicherheitaspekte mit Javascript
 	\end{itemize}
 \end{frame}
 
-\section{Zusammenfassung und Ausblick}
+\section{Zusammenfassung	}
 
-\begin{frame}{Zusammenfassung}
+\begin{frame}{Zusammenfassung - 1.Meilenstein}
 
 	\begin{table}[h!]
 	\centering
 	\begin{tabular}{p{5em} p{12em} p{12em}}
-		\textbf{Komponente} & \textbf{Meilenstein (Heute)} & \textbf{aktueller Stand} \\ \midrule
-		Importer & Implementierung beendet, Leistung verbessern/testen & Grundfunktionalität vorhanden, kleine Änderungen und Parallelisierung noch offen \\ \midrule
-		Middleware & Interface definieren, Grundfunktion implementiert & Empfängt VAST-Anfragen und antwortet mit dem Resultat auf einer festgelegten API \\ \midrule
-		Web-Anwendung & Für einen Anwendungsfall Daten anfragen und anzeigen & VAST-Anfrage wird gesendet und die Antwort empfangen, Daten können als filterbare Tabelle und Graph dargestellt werden \\ \bottomrule
+		\textbf{Komponente} & \textbf{1.Meilenstein 16.06.} & \textbf{Damaliger Stand} \\ \midrule
+		Importer & Implementierung beendet, Leistung verbessern/testen &  \\ \midrule
+		Middleware & Interface definieren, Grundfunktion implementiert &  \\ \midrule
+		Web-Anwendung & Für einen Anwendungsfall Daten anfragen und anzeigen & VAST-Anfrage wird gesendet \& die Antwort empfangen, Daten können als filterbare Tabelle und Graph dargestellt werden \\ \bottomrule
 	\end{tabular}
 	\end{table}
 \end{frame}
 
-\begin{frame}{Ausblick}
+\begin{frame}{Zusammenfassung - 2.Meilenstein}
 	\begin{table}[h!]
 	\centering
 	\begin{tabular}{p{5em} p{12em} p{12em}}
-		\textbf{Komponente} & \textbf{Meilenstein (30.6.)} & \textbf{Meilenstein (7.6.)} \\ \midrule
-		Importer & Parallelisierung implementieren, Abgeschlossen und getestet & Integrations- und Leistungsfähigkeitstest \\ \midrule
-		Middleware & HTTP-Parser, URL-Parser, Dynamische HTTP-Antwort	& Integrations- und Leistungsfähigkeitstest \\ \midrule
-		Web-Anwendung &  VAST-Anfragenerstellung durch graphische Elemente erleichtern, Dynamisches Laden der JSON-Daten & Fertig implementiert \\ \bottomrule
+		\textbf{Komponente} & \textbf{2.Meilenstein (30.6.)} & \textbf{Damaliger Stand} \\ \midrule
+		Importer & Parallelisierung implementieren, Abgeschlossen und getestet &  \\ \midrule
+		Middleware & HTTP-Parser, URL-Parser, Dynamische HTTP-Antwort	&  \\ \midrule
+		Web-Anwendung &  VAST-Anfragenerstellung durch grafische Elemente erleichtern, Dynamisches Laden der JSON-Daten & Grafische Elemente mit Django nicht vollfunktionsfähig $\rightarrow$ Implementierung mit Javascript, Tabelle wird dynamisch geladen \\ \bottomrule
+	\end{tabular}
+	\end{table}
+\end{frame}
+
+\begin{frame}{Zusammenfassung - 3.Meilenstein}
+	\begin{table}[h!]
+	\centering
+	\begin{tabular}{p{5em} p{12em} p{12em}}
+		\textbf{Komponente} & \textbf{3.Meilenstein (7.6.)} & \textbf{Heutiger Stand} \\ \midrule
+		Importer & Integrations- und Leistungsfähigkeitstest & \\ \midrule
+		Middleware &  Integrations- und Leistungsfähigkeitstest &  \\ \midrule
+		Web-Anwendung &  Anwendungsfall fertig implementiert & Erstellen einer VAST-Anfrage mit grafischen Elementen \& Anzeigen und filtern von BGP-Daten in einer Tabelle \& Visualisierung der BGP-Routen durch einen Graphen \\ \bottomrule
 	\end{tabular}
 	\end{table}
 \end{frame}
