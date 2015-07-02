@@ -179,7 +179,7 @@
    	\begin{itemize}
    	\item Einlesen von BGP-Dumps
    	\end{itemize}
-   	\vspace{0,2cm}
+   	\vspace{0,3cm}
    Funktionsdetails:
 	\begin{itemize}
 		\item Low-Order Parser interpretieren eingelesene Bytes
@@ -190,19 +190,24 @@
 
 \begin{frame}{Importer - Stand und Probleme}{}
 
-	Heutiger Stand:
+	Stand des letzten Meilensteins:
 	\begin{itemize}
 		\item Grundfunktionalität vorhanden
-		\item kleine Änderungen noch offen
+		\item Änderungen offen
 	\end{itemize}
-	\vspace{0,2cm}
+	\vspace{0,3cm}
+	Heutiger Stand:
+	\begin{itemize}
+		\item Importer vollständig implementiert
+	\end{itemize}
+	\vspace{0,3cm}
 	Probleme:
 	\begin{itemize}
-		\item  Häufige Änderungen durch aktive Entwicklung
-		\item Ungenaue Definition der Paketfelder
+		\item anfangs keine direkte Implementierung der RFCs
+		\item verschachtelte Kombination vieler RFCs nötig
 	\end{itemize}
-	\vspace{0,2cm}
-	Nächster Schritt:
+	\vspace{0,3cm}
+	offene Aufgaben:
 	\begin{itemize}
 		\item Parallelität, um gleichzeitige Imports zu ermöglichen
 	\end{itemize}
