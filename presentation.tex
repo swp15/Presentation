@@ -312,10 +312,10 @@
 
 	\begin{table}[h!]
 	\centering
-	\begin{tabular}{p{5em} p{12em} p{12em}}
+	\begin{tabular}{p{5em} p{12em} p{14em}}
 		\textbf{Komponente} & \textbf{1.Meilenstein 16.06.} & \textbf{Damaliger Stand} \\ \midrule
 		Importer & Implementierung beendet, Leistung verbessern/testen &  \\ \midrule
-		Middleware & Interface definieren, Grundfunktion implementiert &  \\ \midrule
+		Middleware & Interface definieren, Grundfunktion implementiert & Empfang und Weiterleitung von Anfragen zu VAST, Antwort an Client zurückschicken \\ \midrule
 		Web-Anwendung & Für einen Anwendungsfall Daten anfragen und anzeigen & VAST-Anfrage wird gesendet \& die Antwort empfangen, Daten können als filterbare Tabelle und Graph dargestellt werden \\ \bottomrule
 	\end{tabular}
 	\end{table}
@@ -324,10 +324,10 @@
 \begin{frame}{Zusammenfassung - 2.Meilenstein}
 	\begin{table}[h!]
 	\centering
-	\begin{tabular}{p{5em} p{12em} p{12em}}
+	\begin{tabular}{p{5em} p{12em} p{14em}}
 		\textbf{Komponente} & \textbf{2.Meilenstein (30.6.)} & \textbf{Damaliger Stand} \\ \midrule
 		Importer & Parallelisierung implementieren, Abgeschlossen und getestet &  \\ \midrule
-		Middleware & HTTP-Parser, URL-Parser, Dynamische HTTP-Antwort	&  \\ \midrule
+		Middleware & HTTP-Parser, URL-Parser	& Beide Parser fertig, Code refactored\\ \midrule
 		Web-Anwendung &  VAST-Anfragenerstellung durch grafische Elemente erleichtern, Dynamisches Laden der JSON-Daten & Grafische Elemente mit Django nicht vollfunktionsfähig $\rightarrow$ Implementierung mit Javascript, Tabelle wird dynamisch geladen \\ \bottomrule
 	\end{tabular}
 	\end{table}
@@ -336,7 +336,7 @@
 \begin{frame}{Zusammenfassung - 3.Meilenstein}
 	\begin{table}[h!]
 	\centering
-	\begin{tabular}{p{5em} p{12em} p{12em}}
+	\begin{tabular}{p{5em} p{12em} p{14em}}
 		\textbf{Komponente} & \textbf{3.Meilenstein (7.6.)} & \textbf{Heutiger Stand} \\ \midrule
 		Importer & Integrations- und Leistungsfähigkeitstest & \\ \midrule
 		Middleware &  Integrations- und Leistungsfähigkeitstest &  \\ \midrule
