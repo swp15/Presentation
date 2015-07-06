@@ -133,10 +133,10 @@
 \section{Motivation und Ziele}
 
 \begin{frame}{Motivation und Ziele}{}
-   Status Quo:
+   VAST -- Status Quo:
 	\begin{itemize}
 		\item BGP-Importer liest nur Text-Format ein
-		\item Nur über Konsole zugänglich
+		\item Abfragen nur über Konsole zugänglich
 		\end{itemize}
 		\vspace{0,2cm}		
 	Probleme:
@@ -193,7 +193,6 @@
 	Stand des letzten Meilensteins:
 	\begin{itemize}
 		\item Grundfunktionalität vorhanden
-		\item Änderungen offen
 	\end{itemize}
 	\vspace{0,3cm}
 	Heutiger Stand:
@@ -206,12 +205,6 @@
 		\item Anfangs keine direkte Implementierung der RFCs
 		\item Verschachtelte Kombination vieler RFCs nötig
 	\end{itemize}
-	\vspace{0,3cm}
-	Offene Aufgaben:
-	\begin{itemize}
-		\item Parallelität, um gleichzeitige Imports zu ermöglichen
-	\end{itemize}
-
 \end{frame}
 
 \subsection{Middleware}
@@ -310,7 +303,7 @@
 	\centering
 	\begin{tabular}{p{5em} p{12em} p{14em}}
 		\textbf{Komponente} & \textbf{1.Meilenstein 16.06.} & \textbf{Damaliger Stand} \\ \midrule
-		Importer & Implementierung beendet, Leistung verbessern/testen &  \\ \midrule
+		Importer & Implementierung beendet, Leistung verbessern/testen &  Grundfunktionalität vorhanden\\ \midrule
 		Middleware & Interface definieren, Grundfunktion implementiert & Empfang und Weiterleitung von Anfragen zu VAST, Antwort an Client zurückschicken \\ \midrule
 		Web-Anwendung & Für einen Anwendungsfall Daten anfragen und anzeigen & VAST-Anfrage wird gesendet \& die Antwort empfangen, Daten können als filterbare Tabelle und Graph dargestellt werden \\ \bottomrule
 	\end{tabular}
@@ -322,7 +315,7 @@
 	\centering
 	\begin{tabular}{p{5em} p{12em} p{14em}}
 		\textbf{Komponente} & \textbf{2.Meilenstein (30.6.)} & \textbf{Damaliger Stand} \\ \midrule
-		Importer & Parallelisierung implementieren, Abgeschlossen und getestet &  \\ \midrule
+		Importer & Parallelisierung implementieren, Abgeschlossen und getestet &  Parser fertig gestellt\\ \midrule
 		Middleware & HTTP-Parser, URL-Parser	& Beide Parser fertig, Code refactored\\ \midrule
 		Web-Anwendung &  VAST-Anfragenerstellung durch grafische Elemente erleichtern, Dynamisches Laden der JSON-Daten & Grafische Elemente mit Django nicht vollfunktionsfähig $\rightarrow$ Implementierung mit Javascript, Tabelle wird dynamisch geladen \\ \bottomrule
 	\end{tabular}
@@ -334,7 +327,7 @@
 	\centering
 	\begin{tabular}{p{5em} p{12em} p{14em}}
 		\textbf{Komponente} & \textbf{3.Meilenstein (7.6.)} & \textbf{Heutiger Stand} \\ \midrule
-		Importer & Integrations- und Leistungsfähigkeitstest & \\ \midrule
+		Importer & Integrations- und Leistungsfähigkeitstest & Importer vollständig implementiert \& Leistungsfähigkeitstest \\ \midrule
 		Middleware &  Integrations- und Leistungsfähigkeitstest & VAST-Server aufgesetzt \& Integrationstests mit Web-Anwendung \\ \midrule
 		Web-Anwendung &  Anwendungsfall fertig implementiert & Erstellen einer VAST-Anfrage mit grafischen Elementen \& Anzeigen und filtern von BGP-Daten in einer Tabelle \& Visualisierung der BGP-Routen durch einen Graphen \\ \bottomrule
 	\end{tabular}
