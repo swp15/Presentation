@@ -137,7 +137,7 @@
    VAST -- Status Quo:
 	\begin{itemize}
 		\item BGP-Importer liest nur Text-Format ein
-		\item Abfragen nur über Konsole zugänglich
+		\item Abfragen nur über Konsole möglich
 		\end{itemize}
 		\vspace{0,2cm}		
 	Probleme:
@@ -222,7 +222,7 @@
 		\item Externe Bibliotheken vermeiden
 		\item HTTP-Parser und Server selbst implementieren
 		\item Integration ins Actor-Modell für Parallelität
-		\item Vorhandenes parseable Konzept verwenden
+		\item Vorhandenes \emph{Parseable Concept} verwenden
 	\end{itemize}
 	Umsetzung: HTTP über CAF-Nachrichten
 	\begin{itemize}
@@ -277,7 +277,7 @@
 	\end{itemize}
 	Technologien:
 	\begin{itemize}
-		\item Schnelle, stabile, sichere Webanwendung entwicklung in einer bekannten Programmiersprache:  Python 3 (Django), Javascript			
+		\item Schnelle, stabile, sichere Webanwendung Entwicklung in einer bekannten Programmiersprache:  Python 3 (Django), Javascript			
 		\item Kommunikation zu VAST durch einfaches  und weitverbreitetes Protokoll und Format: HTTP + JSON
 	\end{itemize}
 \end{frame}
@@ -287,11 +287,11 @@
 	\begin{itemize}
 		\item Ermöglicht das Erstellen einer VAST-Anfrage ohne Vorwissen über dessen Syntax, durch GUI-Elemente 
 		\item Die erstellte VAST-Anfrage wird an den Server verschickt und  die JSON-Antwort wird dynamisch entgegengenommen 
-		\item Erstellt eine filterbare Tabelle oder einen Graph des BGP routing
+		\item Erstellt eine filterbare Tabelle oder einen Graph des BGP Routing
 	\end{itemize}
 	Probleme:
 	\begin{itemize}
-		\item Das Erstellen von sicheren Formularen ist in Django leicht, aber nicht vollfunktionfähig wie mit Javascript \\
+		\item Das Erstellen von sicheren Formularen ist in Django leicht, aber nicht vollfunktionsfähig wie mit Javascript \\
 		$\rightarrow$ Das Erstellen der Formulare erfolgte nach Abwägungen der Sicherheitaspekte mit Javascript
 	\end{itemize}
 \end{frame}
